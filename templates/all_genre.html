@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+{% block body %}
+  <h2>Все жанры</h2>
+    {%- for genre in genres %}
+      <ul>
+        <li> genre: {{ genre.genre_name }} </li>
+        <li> id: {{ genre.id }} </li>
+      </ul>
+      <hr>
+    {%- endfor %}
+{% endblock %}
